@@ -1,0 +1,291 @@
+#navbarNav .nav-link:hover, #navbarNav .nav-link:focus {
+    background: #a4508b;
+        color: #fff !important;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(164,80,139,0.10);
+        transition: background 0.2s, color 0.2s;
+}
+#mainCarousel .carousel-control-prev,
+#mainCarousel .carousel-control-next {
+    display: none !important;
+}
+#mainCarousel .carousel-control-prev,
+#mainCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    opacity: 0.85;
+    border: none;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, opacity 0.2s;
+}
+#mainCarousel .carousel-control-prev {
+        left: 50%;
+        transform: translate(-120%, -50%);
+}
+#mainCarousel .carousel-control-next {
+        right: 50%;
+        transform: translate(120%, -50%);
+}
+#mainCarousel .carousel-control-prev:hover,
+#mainCarousel .carousel-control-next:hover {
+    background: rgba(255,255,255,0.95);
+    opacity: 1;
+}
+#mainCarousel .carousel-control-prev-icon,
+#mainCarousel .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 2px 4px #4f8cff44) brightness(1.15);
+}
+#mainCarousel .carousel-control-prev,
+#mainCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+#mainCarousel .carousel-control-prev {
+    left: 0;
+}
+#mainCarousel .carousel-control-next {
+    right: 0;
+}
+#mainCarousel .carousel-control-prev:hover,
+#mainCarousel .carousel-control-next:hover {
+    background: none !important;
+    border: none !important;
+    opacity: 1 !important;
+}
+
+#mainCarousel .carousel-item img {
+        width: 100%;
+        max-width: 600px;
+    aspect-ratio: 16/9;
+    height: auto;
+    display: block;
+    margin: 32px auto 32px auto;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(79,140,255,0.18), 0 2px 12px rgba(0,0,0,0.10);
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.7);
+    background: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+#mainCarousel .carousel-item img:hover {
+    box-shadow: 0 16px 48px rgba(79,140,255,0.28), 0 4px 24px rgba(0,0,0,0.13);
+    transform: scale(1.02);
+}
+#mainCarousel .carousel-control-prev,
+#mainCarousel .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 54px;
+    height: 54px;
+    background: rgba(255,255,255,0.55);
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(79,140,255,0.13);
+    opacity: 0.85;
+    transition: background 0.2s, opacity 0.2s;
+    z-index: 2;
+    border: 2px solid #4f8cff33;
+}
+#mainCarousel .carousel-control-prev:hover,
+#mainCarousel .carousel-control-next:hover {
+    background: linear-gradient(135deg, #4f8cff 0%, #6dd5ed 100%);
+    opacity: 1;
+    border-color: #4f8cff;
+}
+}
+/* WowSlider Custom Styling */
+#wowslider-container1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wowslider-container1 .ws_images img,
+#wowslider-container1 .ws_images .ws_list img,
+#wowslider-container1 .ws_images a img,
+#wowslider-container1 .ws_images .ws_effect img {
+    border-radius: 20px !important;
+    object-fit: cover;
+    width: 100% !important;
+    height: 350px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    overflow: hidden;
+}
+#wowslider-container1 .ws_bullets {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-top: 10px;
+    text-align: center;
+}
+#wowslider-container1 .ws_bullets div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#wowslider-container1 .ws_bullets a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #bbb;
+    border-radius: 50%;
+    opacity: 1;
+    border: 2px solid #888;
+    margin: 0 3px;
+    transition: background 0.2s, border 0.2s;
+}
+#wowslider-container1 .ws_bullets a.ws_selbull, #wowslider-container1 .ws_bullets a.active {
+    background: #333;
+    border: 2px solid #333;
+}
+#wowslider-container1 .ws_bullets a span {
+    display: none;
+}
+/* تحسين تجاوب الموقع */
+@media (max-width: 768px) {
+    /* Responsive font size for branding */
+    header h1, .navbar-brand {
+        font-size: 1.2rem;
+    }
+    .container {
+        padding: 0 8px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+    .list-group-item {
+        font-size: 0.95rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+}
+
+body {
+    font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+    background: #f8fafc;
+    color: #22223b;
+    min-height: 100vh;
+}
+
+header {
+    background: #4f8cff;
+    border-bottom: 3px solid #4f8cff;
+    box-shadow: 0 4px 24px rgba(79,140,255,0.10);
+}
+header h1, .navbar-brand {
+    font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+    font-size: 2.2rem;
+    color: #fff !important;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 2px 8px #4f8cff44;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    transition: none;
+}
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 8px;
+    padding: 8px 18px !important;
+}
+main h2, main h5 {
+    font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+    color: #4f8cff;
+    color: #4f8cff;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Classic card style */
+.card {
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(79,140,255,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0 8px 32px rgba(79,140,255,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.card-title {
+    color: #4f8cff;
+    font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.card-text {
+    color: #22223b;
+}
+
+/* Classic buttons */
+.btn, .nav-pills .nav-link {
+    border-radius: 8px;
+    font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn:hover, .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+    background: #6dd5ed;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(79,140,255,0.18);
+}
+
+/* Classic modal */
+.modal-content {
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(79,140,255,0.10);
+}
+
+/* Classic WowSlider */
+#wowslider-container1 .ws_images img {
+    border: 3px solid #4f8cff !important;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(79,140,255,0.10);
+}
+
+.modal-content {
+    direction: rtl;
+    text-align: right;
+}
+
+#authModal .form-label {
+    font-weight: bold;
+}
+
+#authModal a {
+    cursor: pointer;
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+#authModal a:hover {
+    color: #0a58ca;
+}
