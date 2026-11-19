@@ -1,4 +1,3 @@
-عدله لي وخليه بشكل لائق
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
